@@ -8,9 +8,9 @@ Project Structure
 
 The project structure is organized as follows:
 
-luaCopy code
 
-`|-- var
+```
+|-- var
 |   |-- www
 |       |-- thecomfycandles.com
 |           |-- html
@@ -35,7 +35,7 @@ luaCopy code
 |   |   |-- styles.css (CSS styles)
 |   |-- js
 |   |   |-- script.js (JavaScript functions)
-|-- uploads (for user-uploaded files)`
+|-- uploads (for user-uploaded files)```
 
 Getting Started
 ---------------
@@ -44,15 +44,14 @@ To set up this project locally, follow these steps:
 
 1.  Clone this repository to your local machine:
 
-    bashCopy code
 
     `git clone <repository_url>`
 
 2.  Configure the database connection in `config/config.php`. Replace the placeholders with your actual database details.
 
-    phpCopy code
 
-    `// Database Configuration
+    ```php
+    // Database Configuration
     $db_host = 'localhost';
     $db_user = 'username';
     $db_password = 'password';
@@ -64,7 +63,7 @@ To set up this project locally, follow these steps:
     // Check the connection
     if ($conn === false) {
         die("Error: Could not connect to the database. " . mysqli_connect_error());
-    }`
+    }```
 
 3.  Add your website content to the PHP files in the `html` directory and customize the styles in `assets/css/styles.css`.
 
