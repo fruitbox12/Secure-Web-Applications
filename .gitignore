@@ -1,25 +1,68 @@
-# CakePHP 3
+# Ignore system and backup files
+.DS_Store
+Thumbs.db
 
-/vendor/*
-/config/app.php
+# Ignore log files
+error_log
+access_log
+*.log
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Ignore database dumps and backups
+*.sql
+*.dump
 
-/logs/*
-!/logs/empty
+# Ignore session files
+sessions/
 
-# CakePHP 2
+# Ignore cache files
+cache/
+public/cache/
+var/cache/
+wp-content/cache/
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Ignore configuration files with sensitive data (e.g., database passwords)
+config.php
+wp-config.php
+
+# Ignore environment files
+.env
+
+# Ignore user uploads or media files
+public/uploads/
+wp-content/uploads/
+
+# Ignore Composer dependencies (if using PHP)
+/vendor/
+
+# Ignore Node.js dependencies (if using JavaScript)
+/node_modules/
+
+# Ignore development or temporary files
+.idea/
+.vscode/
+.tmp/
+.tmp-*
+
+# Ignore generated build files (e.g., for JavaScript/SCSS)
+public/build/
+public/dist/
+
+# Ignore logs and temporary files (if using a framework)
+/var/
+logs/
+
+# Ignore compiled binary files (if any)
+*.exe
+*.out
+
+# Ignore swap files
+*.swp
+*.swo
+*.swm
+
+# Ignore backup files
+*~
+
+# Ignore Docker and Docker Compose related files (if used)
+.dockerignore
+docker-compose.yml
